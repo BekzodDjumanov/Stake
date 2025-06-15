@@ -6,16 +6,24 @@
 # Instructions
 
 ### Navigate to Repository
-```git clone https://github.com/BekzodDjumanov/Stake.git```
+```
+git clone https://github.com/BekzodDjumanov/Stake.git
+```
 
 ### Navigate to PD
-```cd Stake```
+```
+cd Stake
+```
 
 ### Compile
-```javac Stake.java```
+```
+javac Stake.java
+```
 
 ### Run
-```java Stake```
+```
+java Stake
+```
 
 _Copyright 2025 Bekzod Djumanov_
 
