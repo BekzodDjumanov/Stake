@@ -13,11 +13,14 @@ public class Stake{
         String[] row;
         int loss = 0;
         double lossBet = 0;
+        int wallet;
         
         System.out.println("***************************");
         System.out.println("Welcome to Slots at Stake!");
         System.out.println("***************************");
         System.out.println("Loss Condition: A reduction in balance by bet amount.");
+        System.out.println("***************************");
+        System.out.println("Enter a non-integer to cash out!");
         System.out.println("***************************");
 
         while(balance > 0){
@@ -26,8 +29,19 @@ public class Stake{
                 System.out.print("Bet Amount: ");
                 bet = scanner.nextInt();
             } catch(InputMismatchException e){
-                System.out.println("The Slot Machine has crashed.");
-                System.exit(0);
+                while(true){
+                    try{
+                        System.out.print("\nPlease enter wallet number: ");
+                        scanner.nextLine();
+                        wallet = scanner.nextInt();
+                        System.out.println("$" + balance + " has been cashed out");
+                        System.exit(0);
+                    } catch(InputMismatchException i){
+                        System.out.println("\n**********************************");
+                        System.out.println("Please input a valid wallet number.");
+                        System.out.println("**********************************");
+                }
+                }
             }
 
             if(bet > balance){
