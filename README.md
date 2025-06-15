@@ -1,6 +1,6 @@
 # Stake Casino
 <p align="center">
-  <img src="Stake.png" alt="Stake Logo" style="border: 5px dashed red;" />
+  <img src="Stake.png" alt="Stake Logo" style="border: 5px dashed red; width: 50px;" />
 </p>
 
 # Instructions
