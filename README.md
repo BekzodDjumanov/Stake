@@ -17,10 +17,10 @@
 ### Run
 ```java Stake```
 
-_Copyright 2025 Bekzod Djumanov
+_Copyright 2025 Bekzod Djumanov_
 
-This project is not affiliated with, endorsed, or sponsored by Stake.com.
-This is an independent project created purely for educational and inspirational purposes.
-All trademarks, logos, and brand names associated with Stake.com are the property of their respective owners._
+_This project is not affiliated with, endorsed, or sponsored by Stake.com._
+_This is an independent project created purely for educational and inspirational purposes._
+_All trademarks, logos, and brand names associated with Stake.com are the property of their respective owners_
 
 
