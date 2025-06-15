@@ -11,9 +11,13 @@ public class Stake{
         int payout;
         boolean playAgain = true;
         String[] row;
+        int loss = 0;
+        double lossBet = 0;
         
         System.out.println("***************************");
         System.out.println("Welcome to Slots at Stake!");
+        System.out.println("***************************");
+        System.out.println("Loss Condition: A reduction in balance by bet amount.");
         System.out.println("***************************");
 
         while(balance > 0){
@@ -35,7 +39,20 @@ public class Stake{
                 System.out.println("***************************");
                 continue;
             } else{
-                balance -= bet;
+                loss += 1;
+                if (loss > 2){
+                    lossBet = bet * 1.4;
+                    System.out.println("Loss Conditions Activated! Balance will reduce by 40% of bet!!");
+                    balance -= lossBet;
+                }
+                else if (loss > 4){
+                    lossBet = bet * 1.7;
+                    System.out.println("Loss Conditions Activated! Balance will reduce by 70% of bet!!");
+                    balance -= lossBet;
+                }
+                else{
+                    balance -= bet;
+                }
                 System.out.println("***************************");
             }
             row = spinRow();
@@ -46,6 +63,7 @@ public class Stake{
                 System.out.println("Winner!");
                 System.out.printf("You won: $%d\n", payout);
                 balance += payout;
+                loss = 0;
             }
             else {
                 System.out.println("Nothing this time.");
