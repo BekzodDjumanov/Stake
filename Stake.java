@@ -54,14 +54,14 @@ public class Stake{
                 continue;
             } else{
                 loss += 1;
-                if (loss > 2){
-                    lossBet = bet * 1.4;
-                    System.out.println("Loss Conditions Activated! Balance will reduce by 40% of bet!!");
-                    balance -= lossBet;
-                }
-                else if (loss > 4){
+                if (loss > 4){
                     lossBet = bet * 1.7;
                     System.out.println("Loss Conditions Activated! Balance will reduce by 70% of bet!!");
+                    balance -= lossBet;
+                }
+                else if (loss > 2){
+                    lossBet = bet * 1.4;
+                    System.out.println("Loss Conditions Activated! Balance will reduce by 40% of bet!!");
                     balance -= lossBet;
                 }
                 else{
