@@ -34,12 +34,12 @@ public class Stake{
                         System.out.print("\nPlease enter wallet number: ");
                         scanner.nextLine();
                         wallet = scanner.nextInt();
-                        System.out.println("$" + balance + " has been cashed out");
+                        System.out.println("$" + balance + " has been cashed out.");
                         System.exit(0);
                     } catch(InputMismatchException i){
-                        System.out.println("\n**********************************");
+                        System.out.println("\n***********************************");
                         System.out.println("Please input a valid wallet number.");
-                        System.out.println("**********************************");
+                        System.out.println("***********************************");
                 }
                 }
             }
